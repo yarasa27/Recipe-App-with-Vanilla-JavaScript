@@ -116,7 +116,24 @@
 }
 
 [data-theme="light"]{
-  color-: ;
+  color-scheme: light;
+
+  --: var(--light-background);
+  --: var(--light-on-background);
+  --: var(--light-on-background-variant);
+  --: var(--light-primary:);
+  --: var(--light-primary-hover);
+  --: var(--light-primary-container);
+  --: var(--light-error);
+  --: var(--light-active-indicator);
+  --: var(--light-image-background);
+  --: var(--light-badge-btn);
+  --: var(--light-on-badge-btn);
+  --: var(--light-outline);
+  --: var(--light-input-outline);
+  --: var(--light-input-outline-hover);
+  --: var(--light-alpha-10);
+  --: var(--light-alpha-20);
 }
 
 
