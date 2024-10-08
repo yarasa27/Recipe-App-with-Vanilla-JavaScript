@@ -348,7 +348,7 @@ main{
  * Icon Button
  */
 
-.icon-btn{
+ .icon-btn{
   width: 40px;
   height: 40px;
   display: grid;
@@ -363,7 +363,28 @@ main{
  * Button
  */
 
+.btn{
+  height: 40px;
+  max-width: max-content;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-4);
+  transition: var(--transition-short);
+}
+.btn .material-symbols-outlined{
+  font-size: 1.8rem;
+}
+.btn.has-icon{
+  padding-inline-start: 16px;
+}
 /* primary button */
+
+.btn-primary{
+   background-color: var(--primary);
+ }
 
 /* secondary button */
 
