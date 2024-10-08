@@ -121,7 +121,7 @@
   --background: var(--light-background);
   --on-background: var(--light-on-background);
   --on-background-variant: var(--light-on-background-variant);
-  --primary: var(--light-primary:);
+  --primary: var(--light-primary);
   --primary-hover: var(--light-primary-hover);
   --primary-container: var(--light-primary-container);
   --error: var(--light-error);
@@ -383,11 +383,18 @@ main{
 /* primary button */
 
 .btn-primary{
-   background-color: var(--primary);
- }
+  background-color: var(--primary);
+  color: var(--white);
+}
+.btn-primary:where(:hover, :focus-visible):not(:active){
+  background-color: var(--primary-hover);
+}
 
 /* secondary button */
 
+.btn-secondary{
+  background-color: var(--primary-container);
+}
 /* badge button */
 
 /* filter button */
@@ -425,6 +432,26 @@ main{
   #HEADER
 \*-----------------------------------*/
 
+.navbar, .header .btn-primary{
+  display: none;
+}
+.header{
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 16px;
+  border-block-end: 1px solid var(--outline);
+  z-index: 4;
+}
+.theme-switch{
+  margin-inline-start: auto;
+}
 
 
 
