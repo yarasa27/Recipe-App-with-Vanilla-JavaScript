@@ -350,6 +350,9 @@ main{
   height: 100%;
   object-fit: cover;
 }
+.section-title{
+  margin-block-end: 12px;
+}
 
 /*-----------------------------------*\
   #COMPONENTS
@@ -530,6 +533,17 @@ main{
 }
 /* badge button */
 
+.badge-btn{
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background-color: var(--badge-btn);
+  color: var(--on-badge-btn);
+  max-width: max-content;
+  padding-inline: 16px;
+  display: grid;
+  place-items: center;
+}
+
 /* filter button */
 
 
@@ -689,8 +703,6 @@ main{
   background-color: var(--primary-hover);
 }
 
-
-
 /*-----------------------------------*\
   #TAB
 \*-----------------------------------*/
@@ -711,8 +723,6 @@ main{
   max-width: 100%;
   margin-block-start: 12px;
 }
-
-
 
 /*-----------------------------------*\
   #RECIPE SLIDER
@@ -743,14 +753,36 @@ main{
   min-width: calc(50% - 4px);
   scroll-snap-align: start;
 }
-
-
-
+.load-more-card{
+  height: 100%;
+  background-color: var(--primary-container);
+  border-radius: var(--radius-4);
+  border: 1px solid var(--outline);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 
 /*-----------------------------------*\
   #TAG
 \*-----------------------------------*/
 
+.tag{
+  text-align: center;
+}
+.tag .section-text{
+  max-width: 50ch;
+  margin-inline: auto;
+}
+.tag-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-block-start: 24px;
+}
 
 
 
