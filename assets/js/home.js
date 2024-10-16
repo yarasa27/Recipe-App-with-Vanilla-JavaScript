@@ -11,6 +11,7 @@
  */
 
 import { fecthData } from "./api.js";
+import { $skeletonCard, cardQueries } from "./global.js";
 
 // Home page Search
 
@@ -47,6 +48,7 @@ addEventOnElements($tabBtns, "click", function () {
 
     $lastActiveTabPanel = $currentTabPanel;
     $lastActiveTabBtn = this;
+    addTabContent(this, $currentTabPanel);
 });
 
 // Navigate Tab with arrow key
@@ -68,3 +70,22 @@ addEventOnElements($tabBtns, "keydown", function(e) {
         $lastActiveTabBtn.setAttribute("tabindex", 0);
     }
 });
+
+/**
+ * WORK WITH API
+ * fecth data for data content
+ */
+
+const addTabContent = ($currentTabBtn, $currentTabPanel) => {
+    const /** {NodeElement} */ $gridList = document.createElement("div");
+    $gridList.classList.add("grid-list");
+    
+    $currentTabPanel.innerHTML = `
+        <div class="grid-list">
+            ${$skeletonCard.repeat(12)}
+        </div>
+    `;
+
+}
+
+addTabContent($lastActiveTabBtn, $lastActiveTabPanel);
