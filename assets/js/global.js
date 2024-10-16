@@ -19,3 +19,5 @@ window.addEventOnElements = ($elements, eventType, callback) => {
         $element.addEventListener(eventType, callback);
     };
 };
+
+export const /** */

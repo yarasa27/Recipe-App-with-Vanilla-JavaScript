@@ -6,6 +6,12 @@
 
 "use strict";
 
+/**
+ * Import
+ */
+
+import { fecthData } from "./api.js";
+
 // Home page Search
 
 const /** "{NodeElement}" */ $searchField = document.querySelector("[data-search-field]");
